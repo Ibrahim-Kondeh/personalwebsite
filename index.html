@@ -2,43 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Ibrahim Kondeh - Home</title>
+  <title>Home - Your Name</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="slideshow.css">
+  <script src="slideshow.js" defer></script>
 </head>
 <body>
 
+  <!-- Include header -->
   <header>
-    <div class="container">
-      <h1>Ibrahim Kondeh</h1>
-      <nav>
-        <ul>
+    <nav class="navbar">
+      <div class="container">
+        <h1 class="logo">Your Name</h1>
+        <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="skills.html">Skills</a></li>
           <li><a href="employment.html">Employment History</a></li>
         </ul>
-      </nav>
-    </div>
+      </div>
+    </nav>
   </header>
 
+  <!-- Home content with slideshow -->
   <main>
-    <section>
-      <div class="container">
-        <h1>Welcome to My Portfolio</h1>
-        <p>I'm Ibrahim Kondeh, a junior majoring in MIS and Accounting at Price College of Business at The University of OKlahoma. This website serves as a window into my professional journey, showcasing my experiences, projects, skills, and aspirations."
-
-Purpose of the Site:
-"The primary goal of this site is to provide potential employers, collaborators, and curious minds a comprehensive view of my skills, projects, and expertise. It's a platform where I aim to exhibit my dedication, innovation, and proficiency in C#, SQL, Public Speaking and Leadership Skills. Through my showcased work and experiences, I aim to connect, inspire, and contribute to innovative projects and collaborations."
-
-       <-- photo to be added-->
+    <section class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="photo1.jpg" alt="Professional Photo 1" style="width:100%">
       </div>
+      <div class="mySlides fade">
+        <img src="photo2.jpg" alt="Professional Photo 2" style="width:100%">
+      </div>
+      <!-- Add more images in similar divs -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </section>
   </main>
 
+  <!-- Include footer -->
   <footer>
     <div class="container">
-      <p>&copy; 2023 Ibrahim Kondeh</p>
+      <p>&copy; 2023 YourName</p>
     </div>
   </footer>
 
