@@ -20,6 +20,58 @@ footer {
   padding: 10px 0;
 }
 
+/* Navbar styling */
+.navbar {
+  background-color: #333;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  margin-right: auto;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  background-color: #555;
+}
+
+/* Active page indicator */
+.nav-links li a.active {
+  background-color: #ddd;
+  color: #333;
+}
+
 /* Slideshow styles */
 .slideshow-container {
   max-width: 100%;
