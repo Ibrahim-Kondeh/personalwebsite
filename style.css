@@ -1,114 +1,46 @@
+/* styles.css */
+
 /* General styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  line-height: 1.6;
 }
 
-.container {
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px 0;
-}
-
-/* Footer styles */
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
+header {
+  background: #333;
+  color: #fff;
   padding: 10px 0;
 }
 
-/* Navbar styling */
-.navbar {
-  background-color: #333;
-  color: white;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 999;
-}
-
-.container {
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px 0;
-  display: flex;
-  align-items: center;
-}
-
-.logo {
-  font-size: 24px;
-  margin-right: auto;
-}
-
-.nav-links {
-  display: flex;
+nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
-.nav-links li {
-  margin-left: 20px;
+nav ul li {
+  display: inline;
+  margin: 0 10px;
 }
 
-.nav-links li a {
+nav ul li a {
+  color: #fff;
   text-decoration: none;
-  color: white;
-  padding: 10px 15px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
 }
 
-.nav-links li a:hover {
-  background-color: #555;
+main {
+  padding: 20px;
 }
 
-/* Active page indicator */
-.nav-links li a.active {
-  background-color: #ddd;
-  color: #333;
-}
-
-/* Slideshow styles */
-.slideshow-container {
-  max-width: 100%;
-  overflow: hidden;
-  margin-top: 20px;
-  position: relative;
-}
-
-.mySlides {
-  display: none;
-}
-
-.mySlides img {
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
   width: 100%;
-  height: auto;
-}
-
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
 }
