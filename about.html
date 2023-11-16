@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Your Name - Page Title</title>
+  <title>Your Name - About</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header>
     <div class="container">
-      <h1>Ibrahim Kondeh</h1>
+      <h1>Your Name</h1>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -25,17 +25,35 @@
   <main>
     <section>
       <div class="container">
-        <h1>Title</h1>
-        <p>Page content goes here.</p>
+        <h1>About Me</h1>
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="about1.jpg" style="width:100%">
+          </div>
+          <div class="mySlides fade">
+            <img src="about2.jpg" style="width:100%">
+          </div>
+          <!-- Add more images in similar divs -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <!-- Dots/bullets to indicate slide numbers -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <!-- Add more spans for more images -->
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
     <div class="container">
-      <p>&copy; 2023 Ibrahim Kondeh</p>
+      <p>&copy; 2023 YourName</p>
     </div>
   </footer>
 
+  <script src="slideshow.js"></script>
 </body>
 </html>
