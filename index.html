@@ -2,44 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Home - Your Name</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="navbar.css">
-  <link rel="stylesheet" href="slideshow.css">
-  <script src="slideshow.js" defer></script>
+  <title>Your Name - Home</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <!-- Include header -->
-  <?php include 'header.php'; ?>
-
-  <!-- Home content with slideshow -->
+  <header>
+    <!-- Include your header content here -->
+    <!-- Example: Logo, Navigation -->
+  </header>
+  
   <main>
-    <section class="slideshow-container">
-      <div class="mySlides fade">
-        <img src="photo1.jpg" alt="Professional Photo 1" style="width:100%">
-      </div>
-      <div class="mySlides fade">
-        <img src="photo2.jpg" alt="Professional Photo 2" style="width:100%">
-      </div>
-      <!-- Add more images in similar divs -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </section>
+    <h1>Welcome to My Portfolio</h1>
+    <!-- Your content for the home page -->
   </main>
-
-  <!-- Include footer -->
- <?php include 'footer.php';?>
-
-  <!-- Script for active page indicator -->
-  <script>
-    const currentLocation = location.href;
-    const navLinks = document.querySelectorAll('.nav-links li a');
-    navLinks.forEach(link => {
-      if (link.href === currentLocation) {
-        link.classList.add('active');
-      }
-    });
-  </script>
+  
+  <footer>
+    <!-- Include your footer content here -->
+    <!-- Example: Contact information, Social media links -->
+  </footer>
+  
+  <script src="scripts.js"></script>
 </body>
 </html>
