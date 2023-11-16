@@ -11,6 +11,16 @@
   <!-- Include header -->
   <!-- Projects content -->
   <!-- Include footer -->
+<!-- ... existing HTML content ... -->
 
+<script>
+  const currentLocation = location.href;
+  const navLinks = document.querySelectorAll('.nav-links li a');
+  navLinks.forEach(link => {
+    if (link.href === currentLocation) {
+      link.classList.add('active');
+    }
+  });
+</script>
 </body>
 </html>
