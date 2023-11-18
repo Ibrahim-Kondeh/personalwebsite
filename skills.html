@@ -2,25 +2,83 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Skills - Your Name</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="navbar.css">
+  <title>Ibrahim Kondeh - Skills</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="https://media.licdn.com/dms/image/D5603AQEj15fcTGL3RA/profile-displayphoto-shrink_800_800/0/1698087421871?e=2147483647&v=beta&t=DLPK-dFKNkmEWyy1zah0VHed886sYfuok3OpOb7dA_o" alt="Your Photo" width="50" height="50" class="d-inline-block align-text-top rounded-circle">
+        Ibrahim Kondeh
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="skills.html">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="employment.html">Employment History</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-  <!-- Include header -->
-  <!-- Skills content -->
-  <!-- Include footer -->
-<!-- ... existing HTML content ... -->
+  <main>
+    <div class="container">
+      <h1>Skills</h1>
+      <!-- Your skills/certifications content here -->
+      <h2>Programming Languages</h2>
+      <ul>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Java</li>
+        <!-- Add more programming languages here -->
+      </ul>
 
-<script>
-  const currentLocation = location.href;
-  const navLinks = document.querySelectorAll('.nav-links li a');
-  navLinks.forEach(link => {
-    if (link.href === currentLocation) {
-      link.classList.add('active');
-    }
-  });
-</script>
+      <h2>Technologies</h2>
+      <ul>
+        <li>HTML/CSS</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <!-- Add more technologies here -->
+      </ul>
+
+      <h2>Certifications</h2>
+      <ul>
+        <li>Certified Web Developer</li>
+        <li>Oracle Certified Java Programmer</li>
+        <li>Microsoft Certified: Azure Fundamentals</li>
+        <!-- Add more certifications here -->
+      </ul>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light text-center py-3">
+    <!-- Footer content -->
+    &copy; 2023 Ibrahim Kondeh
+  </footer>
+
+  <!-- Bootstrap & Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>
